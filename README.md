@@ -9,7 +9,7 @@ Our Coated-LLM consists of three stages: (i) Warm-up phase, where Researcher use
 ## Ablation Study
 ![ablation_study_final](https://github.com/user-attachments/assets/31c0bd82-c580-41aa-87ec-918ad9565e54)
 
-• **Dynamic Few-shot**: We select the top five similar questions (based on cosine distance) from learning examples and corresponding reasonings.
+• **Dynamic Few-shot**: For each combination of interest, we select the top five similar questions (based on cosine distance) from learning examples and corresponding reasonings.
 
 • **Knowledge**: We particularly focus on the pathway information (from CTDbase) that the therapeutic agents target as the external
 biomedical knowledge (RAG).
