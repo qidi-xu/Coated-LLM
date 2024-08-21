@@ -6,6 +6,9 @@ A novel, time-efficient, and cost-effective approach for identifying potential t
 
 Our Coated-LLM consists of three stages: (i) Warm-up phase, where Researcher uses pathway knowledge to practice scientific inference, keeping correct predictions as learning examples. (ii) Inference phase, where Researcher inferences the new combination using its top five similar learning examples from the warm-up phase and gets the consistency hypotheses. (iii) Revision phase, where multiple Reviewers provide feedback and Moderator integrates opinions from Researcher and Reviewer to generate the final consensus hypotheses.
 
+## Ablation Study
+![ablation_study_final](https://github.com/user-attachments/assets/31c0bd82-c580-41aa-87ec-918ad9565e54)
+
 ## Prompt Structure
 ### Prompt for Researcher LLM in the Warm-up phase
 ```
