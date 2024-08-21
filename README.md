@@ -8,6 +8,7 @@ Our Coated-LLM consists of three stages: (i) Warm-up phase, where Researcher use
 
 ## Ablation Study
 ![ablation_study_final](https://github.com/user-attachments/assets/31c0bd82-c580-41aa-87ec-918ad9565e54)
+• Dynamic Few-shot: We select the most similar question in the learning examples from Warm-up phase and its associated reasoning, and leverage them for inductive reasoning in the inference phase. We derive textual embedding of the question of interest and embedding of the question in the learning examples using OpenAI’s text-embedding-ada-002. We then calculated cosine similarity to identify the top five similar questions with the highest similarity along with its correctly generated hypothesis. We appended similar learning examples to the prompt for Researcher LLM. 
 
 ## Prompt Structure
 ### Prompt for Researcher LLM in the Warm-up phase
