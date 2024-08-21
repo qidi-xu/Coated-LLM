@@ -9,17 +9,13 @@ Our Coated-LLM consists of three stages: (i) Warm-up phase, where Researcher use
 ## Ablation Study
 ![ablation_study_final](https://github.com/user-attachments/assets/31c0bd82-c580-41aa-87ec-918ad9565e54)
 
-• **Dynamic Few-shot**: We select the most similar question in the learning examples from Warm-up phase and its associated reasoning, and
-leverage them for inductive reasoning in the inference phase. We derive textual embedding of the question of interest and embedding of
-the questions in the learning examples using OpenAI’s text-embedding-ada-002. We then calculate cosine similarity to identify the top
-five similar questions with the highest similarity along with its correctly generated hypothesis. We append similar learning examples to
-the prompt for Researcher LLM. 
+• **Dynamic Few-shot**: We select the top five similar questions (based on cosine distance) from learning examples and corresponding reasonings.
 
 • **Knowledge**: We particularly focus on the pathway information (from CTDbase) that the therapeutic agents target as the external
 biomedical knowledge (RAG).
 
 • **Self-consistency**: We generate the response multiple times and aggregate them by obtaining consensus prediction via majority vote
-and selecting the most detailed (thus longest) chain of thought if its paired answer is the same as the majority. 
+and selecting the most detailed (longest) chain of thought if its paired answer is the same as the majority. 
 
 • **Reviewer and Moderator**: We encourage Reviewer LLM to have multiple perspectives and discuss different branches of thoughts via tree
 of-thoughts reasoning. Once Reviewer LLM finish the discussion and provide feedback, the Moderator LLM aggregates the reviewer’s feedback and researcher’s response to obtain the final decision. 
