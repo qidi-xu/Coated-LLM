@@ -22,8 +22,7 @@ biomedical knowledge (RAG).
 and selecting the most detailed (thus longest) chain of thought if its paired answer is the same as the majority. 
 
 • **Reviewer and Moderator**: We encourage Reviewer LLM to have multiple perspectives and discuss different branches of thoughts via tree
-of-thoughts reasoning. Once Reviewer LLM finish the discussion and provide feedback, the Moderator aggregates the reviewer’s feedback and
-researcher’s response to obtain the final decision. 
+of-thoughts reasoning. Once Reviewer LLM finish the discussion and provide feedback, the Moderator LLM aggregates the reviewer’s feedback and researcher’s response to obtain the final decision. 
 
 ## Prompt Structure
 ### Prompt for Researcher LLM in the Warm-up phase
