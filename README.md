@@ -7,7 +7,8 @@ A novel framework that utilizes systematic in-context learning of large language
 Coated-LLM is a structured framework that mimics human scientific reasoning processes to generate hypotheses on efficacious combinatorial therapy. It consists of three stages: (i) Warm-up phase, where Researcher uses external biological knowledge to practice scientific inference and keep correct predictions as learning examples. (ii) Inference phase, where Researcher inferences the new combination using its top five similar questions from learning examples and gets the consistency hypotheses. (iii) Revision phase, where multiple Reviewers provide feedback and Moderator integrates consistency hypotheses from Researcher and feedback from Reviewer to generate the final consensus hypotheses.
 
 ## Ablation Study
-![ablation_study_final](https://github.com/user-attachments/assets/31c0bd82-c580-41aa-87ec-918ad9565e54)
+![ablation_study_final](https://github.com/user-attachments/assets/a1c4a261-9ceb-4aee-b687-d958179092ff)
+-87ec-918ad9565e54)
 
 • **Dynamic Few-shot**: For each combination of interest, we select the top five similar questions (based on cosine distance) from learning examples and corresponding reasonings.
 
